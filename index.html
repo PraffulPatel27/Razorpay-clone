@@ -8,10 +8,14 @@
     <link href='https://fontawesome.com/icons/arrow-right?f=classic&s=solid&pc=%230b72e7' rel='stylesheet'>
     <link href="https://fontawesome.com/icons/check?f=classic&s=regular&pc=%2385dfca" rel="stylesheet">
     <style>
-      .coreFeature {
+      .coreFeatureSection {
         background-size: 100% 100%;
-        padding-top: 14rem;
+        padding-top: 12rem;
         padding-bottom: 12rem;
+      }
+
+      .featureShadow {
+        box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
       }
 
       .ctaSection {
@@ -73,8 +77,9 @@
         transition: all 200ms ease-in-out;
       }
 
-      .newFeatureCard {
-        box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+      .featureCard2 {
+        filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+        stroke-opacity: 0 !important;
       }
     </style>
 </head>
@@ -184,9 +189,20 @@
         </p>
 
         <button
-        class="bg-lightBlue text-white rounded-md py-[14px] px-[18px] font-mullish font-bold
+        class="flex justify-between bg-lightBlue text-white rounded-md py-[14px] px-[18px] font-mullish font-bold
         hover:bg-lightBlue500 transition-all duration-200"
-        > Sign Up Now</button>
+        > Sign Up Now
+        <svg
+            viewBox="0 0 24 24"
+            focusable="false"
+            class="w-[15px] h-[14px] ml-3 mt-1.5"
+          >
+            <path
+              fill="currentColor"
+              d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+            ></path>
+          </svg>  
+        </button>
       </div>
 
       <!----- Right Section  ------->
@@ -743,11 +759,11 @@
                class="grid grid-cols-3 w-full gap-4 my-14">
                 
                <!-- box1 -->
-                <div class="bg-[#181c2e] w-full min-h-[15rem] relative cursor-pointer border-slate-600 featureCard2">
+                <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
 
                   <!-- Box Icon  -->
                   <img src="assets/current-icon.svg" alt="#"
-                   class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] featureCardIcon
+                   class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon
                     transition-all duration-200"> 
                   
                   <!-- box shape -->
@@ -755,7 +771,7 @@
                   viewBox="0 0 349.32501220703125 225"
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
-                  class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200 featureCardSVG"
+                  class="stroke-1 stroke-[#818597] featureCardSVG h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
                   style="stroke-opacity: 0.15"
                   >
                   <path
@@ -770,12 +786,12 @@
               h -337.32501220703125 
               a 6 6 0 0 1 -6 -6 
               z"
-                    fill="#fff"
+                  fill="#fff"
                   ></path>
                    </svg>
           
                    <!-- box content -->
-                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 
+                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox
                     ">
                       <div>
                         <h2 class="font-mullish font-extrabold text-lightBlue leading-[1.2] text-[1.375rem]">
@@ -829,7 +845,7 @@
                    </svg>
           
                    <!-- box content -->
-                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8
+                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox
                     ">
                       <div>
                         <h2 class="font-mullish font-bold text-deepBlueHead leading-relaxed-[1.2] text-[1.375rem]">
@@ -882,7 +898,7 @@
                    </svg>
           
                    <!-- box content -->
-                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8
+                   <div class="z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 featureCardBox
                     ">
                       <div>
                         <h2 class="font-mullish font-bold text-deepBlueHead leading-relaxed-[1.2] text-[1.375rem]">
@@ -951,7 +967,7 @@
          class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-[10]">
 
 
-        <div class="w-full grid grid-cols-3 gap-y-10 relative z-[100]">
+        <div class="w-full grid grid-cols-3 gap-y-10 gap-x-3.5 relative z-[100]">
             
           <!-- Item 1 -->
             <div class="relative flex items-center z-0">
@@ -970,7 +986,7 @@
             <div
               class="p-10 bg-white bg-[url(assets/instant-settlement-1-bg.svg)] w-full max-h-[300px] cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
-                hover:bg-[url(assets/instant-settlement-1-bghover.svg)]">
+                hover:bg-[url(assets/instant-settlement-1-bghover.svg)] featureShadow">
               
                 <img src="assets/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
@@ -996,7 +1012,7 @@
             <div
               class="p-10 bg-white bg-[url(assets/upi-autopay-2-bg.svg)] w-full max-h-[300px] cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
-                hover:bg-[url(assets/upi-autopay-2-bghover.svg)]">
+                hover:bg-[url(assets/upi-autopay-2-bghover.svg)] featureShadow">
               
                 <img src="assets/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
@@ -1021,7 +1037,7 @@
             <div
               class="p-10 bg-white bg-[url(assets/magic-checkout-3-bg.svg)] w-full max-h-[300px] cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
-                hover:bg-[url(assets/magic-checkout-3-bghover.svg)]">
+                hover:bg-[url(assets/magic-checkout-3-bghover.svg)] featureShadow">
               
                 <img src="assets/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
@@ -1047,7 +1063,7 @@
             <div
               class="p-10 bg-white bg-[url(assets/payment-button-4-bg.svg)] w-full max-h-[300px] cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
-                hover:bg-[url(assets/payment-button-4-bghover.svg)]">
+                hover:bg-[url(assets/payment-button-4-bghover.svg)] featureShadow">
               
                 <img src="assets/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
@@ -1073,9 +1089,9 @@
             <div
               class="p-10 bg-white bg-[url(assets/instant-settlement-5-bg.svg)] w-full max-h-[300px] cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
-                hover:bg-[url(assets/instant-settlement-5-bghoverbg.svg)]">
+                hover:bg-[url(assets/instant-settlement-5-bghoverbg.svg)] featureShadow">
               
-                <img src="assets/razorpayXicon.svg" alt=""
+                <img src="assets/magic-checkout.svg" alt=""
                   class="w-10 h-10">
               
                 <h3 class="font-mullish font-bold text-lg pt-4" 
@@ -1097,6 +1113,138 @@
 
        
         </div>
+      </div>
+  </section>
+
+
+  <!--------------------- Core Feature section ----------------->
+  <section
+   class="bg-[url(assets/core-features-sectionBg.svg)] bg-no-repeat bg-cover mt-8
+    relative coreFeatureSection">
+
+      <div
+        class="relative w-11/12 max-w-[1080px] mx-auto pt-14">
+          <h2 class="font-mullish font-bold text-2xl text-center text-white "
+          >Features</h2>
+          <div class="w-6 h-1 bg-greenLight mx-auto"></div>
+          <p class="font-mullish text-center max-w-[450px] text-white mx-auto"
+           >Empower your business with all the right tools to accept online
+            payments and provide the best customer experience</p>
+
+
+        <!-- Grid -->
+          <div class="grid grid-cols-4 gap-[2rem] mt-8">
+              <!-- Card1 -->
+              <div>
+                  <img src="assets/instant-activation-icon.svg" alt="">
+                  
+                  <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                   >Instant Activation</h3>
+
+                  <p class="font-mullish text-white opacity-80" 
+                    >Get activated and transact
+                    within 2 minutes. Completely
+                    online onboarding with
+                    minimum documentation.</p>
+              </div>
+
+              <!-- Card2 -->
+              <div>
+                <img src="assets/easy-integration.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >Easy Integration</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >With plugins for all major
+                  platforms and languages,
+                  integrate and go live with
+                  Razorpay in less than an hour.</p>
+            </div>
+
+              <!-- Card3 -->
+              <div>
+                <img src="assets/api-driven-icon.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >API Driven</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >Build your business for scale
+                  with our complete API-driven
+                  automation that requires zero
+                  manual intervention.</p>
+            </div>
+
+              <!-- Card4 -->
+              <div>
+                <img src="assets/payment-modes.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >100+ payment modes</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >Offer your customers the
+                  luxury of all payment modes
+                  including Credit/Debit cards,
+                  Netbanking, UPI, Wallets etc.</p>
+            </div>
+
+              <!-- Card5 -->
+              <div>
+                <img src="assets/simple-pricing.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >Simple Pricing</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >Our innovative payment
+                  solutions with competitive
+                  pricing make payments
+                  simpler.</p>
+            </div>
+
+              <!-- Card6 -->
+              <div>
+                <img src="assets/industry-support-icon.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >Best in Industry Support</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >Always available email, phone
+                  and chat based support to
+                  help you in your every step.</p>
+            </div>
+
+              <!-- Card7 -->
+              <div>
+                <img src="assets/dashboard-reporting-icon.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >Dashboard Reporting</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >Real-time data and insights
+                  on your Razorpay Dashboard
+                  to make informed business
+                  decisions.</p>
+            </div>
+
+              <!-- Card8 -->
+              <div>
+                <img src="assets/secure-icon.svg" alt="">
+                
+                <h3 class="font-mullish text-white text-lg font-bold my-4" 
+                 >Secure</h3>
+
+                <p class="font-mullish text-white opacity-80" 
+                  >PCl DSS Level 1 compliant
+                  solution which removes your
+                  burden of regulatory
+                  compliance.</p>
+            </div>
+          </div>
       </div>
   </section>
 
