@@ -12,7 +12,7 @@
 
 <h2> 📌 Overview </h2> 
 
-![Razorpay Clone full page](https://github.com/PraffulPatel27/Razorpay-clone/assets/110104505/57aaba66-31b9-47e7-8885-7d8d2ebccd82) 
+![Discord clone full page](https://github.com/PraffulPatel27/Discord-Clone/assets/110104505/f86ceea0-d43c-4456-b6d2-1a6ad7b6db13)
 
 <h2> 📌 My Process </h2>
 <p> I started by researching the structure and design of the original Razorpay website. </p>
