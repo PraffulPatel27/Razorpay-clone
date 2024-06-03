@@ -1,4 +1,4 @@
-![Razorpay Clone full page](https://github.com/PraffulPatel27/Razorpay-clone/assets/110104505/57aaba66-31b9-47e7-8885-7d8d2ebccd82)<h1> ⭐ Razorpay Clone ⭐ </h1> <br>
+<h1> ⭐ Razorpay Clone ⭐ </h1> <br>
 <h3> A clone of the popular Razorpay website, built using HTML5, CSS3, and JavaScript. </h3>
 <br>
 <h2> 📌 Live Site URL: <a href="https://razorpayp.netlify.app/"> Visit Now 🚀 </a> </h2>
@@ -9,7 +9,8 @@
 <br>
 <h2> 📌 Overview </h2> <br>
 
-<img src="https://drive.google.com/file/d/1k5G6zgKItep2xMCPV4zU5EhMx680Xi3T/view?usp=sharing" alt="Project Screenshot"> <br>
+![Razorpay Clone full page](https://github.com/PraffulPatel27/Razorpay-clone/assets/110104505/57aaba66-31b9-47e7-8885-7d8d2ebccd82) <br>
+
 <h2> 📌 My Process </h2><br>
 <p> I started by researching the structure and design of the original Razorpay website. </p> <br>
 <p> I focused on creating a responsive and visually appealing clone using modern web development techniques. </p> <br>
