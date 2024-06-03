@@ -5,7 +5,7 @@
 <h2> 📌 Live Site URL: <a href="https://razorpayp.netlify.app/"> Visit Now 🚀 </a> </h2>
 
 <h2> 📌 Tech Stack </h2>
-<p> HTML5  CSS3  Tailwind CSS  JavaScript</p>
+<p> HTML5 , CSS3 , Tailwind CSS , JavaScript</p>
 
 <h2> 📌 Overview </h2> 
 
